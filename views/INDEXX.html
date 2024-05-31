@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="../css/STYLEE.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="../img/lgs.png" alt=""><h1> 🌸P R O D U C T O S 🌸 </h1>
+            <div>
+                <img onclick="showCart(this)" class="cart" src="../img/cart.png" alt="">
+                <p class="count-product">0</p>
+
+            </div>
+            <div class="cart-products" id="products-id">
+
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    <!-- <div class="item">
+                        <img src="./images/products/carrito" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+
+                </div>
+
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+
+            </div>
+             <nav class="navbar">
+
+      <div class="boton">
+        <button>Menu</button>
+        <div class="menu-boton">
+          <ul><div><a href="views/index.html">Inicio</a></div></ul>
+          <ul><a href="views/formulario.html">Registrar</a></ul>
+           <ul> <a href="views/login.html">Ingresar</a></ul>
+            <ul><a href="views/login_codigo.html">Administracion</a>
+        </div></ul>
+    </nav>
+        </div>
+
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="../img/Esfero retractil.png" alt="">
+                    <p><span>1200</span>$</p>
+                </div>
+                <p class="title"> Esfero retractil offi-esco colores surtidos </p>
+                <a href="" data-id="1" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/Pegante liquido payasito 120gr.png" alt="">
+                    <p><span>3100</span>$</p>
+                </div>
+                <p class="title">Pegante liquido payasito 120gr </p>
+                <a href="" class="btn-add-cart" data-id="2">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/resaltadores.png" alt="">
+                    <p><span>2000</span>$</p>
+                </div>
+                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp <p class="title"> Resaltadores Neon colores Surtidos </p>
+                <a href="" data-id="3" class="btn-add-cart">añadir al carrito</a>
+            </div> 
+            <div class="carts">
+                <div>
+                    <img src="../img/tejalapiz con deposito.png" alt="">
+                    <p><span>1200</span>$</p>
+                </div>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <p class="title"> Tajalapiz con deposito colores surtidos</p>
+                <a href="" data-id="4" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/plastilina no toxica.png" alt="">
+                    <p><span>2000</span>$</p>
+                </div> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <p class="title"> Plastilina no toxica colores surtidos </p>
+                <a href="" data-id="5" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/cartulinas.png" alt="">
+                    <p><span>350</span>$</p>
+                </div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp 
+                <p class="title">Cartulina colores surtidos </p>
+                <a href="" class="btn-add-cart" data-id="6">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/esferos clasicos.png" alt="">
+                    <p><span>800</span>$</p>
+                </div>
+                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp <p class="title"> Esfero tradicional offi-esco colores surtidos</p>
+                <a href="" data-id="7" class="btn-add-cart">añadir al carrito</a>
+            </div> 
+            <div class="carts">
+                <div>
+                    <img src="../img/Lapiz rojo.png" alt="">
+                    <p><span>950</span>$</p>
+                </div> 
+                <p class="title"> Lapiz rojo offi-esco </p>
+                <a href="" data-id="8" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/Borradores.png" alt="">
+                    <p><span>800</span>$</p>
+                </div>
+                <p class="title">  Borrador de nata keepermate </p>
+                <a href="" data-id="9" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/Lapiz negro.png" alt="">
+                    <p><span>700</span>$</p>
+                </div>
+                <p class="title"> Lapiz grafico negro offi-esco </p>
+                <a href="" class="btn-add-cart" data-id="10">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img/correctores.png" alt="">
+                    <p><span>2500</span>$</p>
+                </div>
+                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp <p class="title"> Corrector liquido offi-esco colores surtidos</p>
+                <a href="" data-id="11" class="btn-add-cart">añadir al carrito</a>
+            </div> 
+            <div class="carts">
+                <div>
+                    <img src="../img/cuadernos.png" alt="">
+                    <p><span>3500</span>$</p>
+                </div>
+                <p class="title"> Cuaderno cuadriculado cosido de 50 hojas escribe</p>
+                <a href="" data-id="12" class="btn-add-cart">añadir al carrito</a>
+            </div>
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="../js/Productos.js" ></script>
+</body>
+</html>

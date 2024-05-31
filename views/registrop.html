@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Registro productos</title>
+</head>
+<section class="form-register">
+    <h4>Formulario Registro</h4>
+    <form method="post" action="../src/registro.php">
+    <input class="controls" type="codigo" id="codigo" placeholder="Ingrese codigo del producto ">
+    <input class="controls" name="nombre" name="nombre" id="nombre" placeholder="Ingrese nombre del producto">
+    <input class="controls" type="precio" name="precio" id="precio" placeholder="Ingrese precio del producto">
+    <input class="controls" type="unidad-m" name="unidad-m" id="unidad-m" placeholder="Ingrese Unidad Media del producto">
+    <input class="controls" type="stock" name="stock" id="stock" placeholder="Ingrese stock del producto">
+    <input class="controls" type="descripcion" name="descripcion" id="descripcion" placeholder="Ingrese descripcion del producto">
+    
+    <input type="hidden" name="registro" value="registrar">
+    <div class="Registrar">
+      <center><button class="buton">Registrar</button></center>
+    </div>
+    </form>
+
+<body>

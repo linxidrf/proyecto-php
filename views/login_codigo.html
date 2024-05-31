@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<title>Login codigo</title>
+</head>
+<body>
+<section class="form-register">
+    <h1>Formulario de Acceso</h1>
+    &nbsp &nbsp &nbsp &nbsp
+   <form id="accessForm" action="procesar.php" method="post">
+        <h4>Número de Acceso</h4>
+                <input type="text" id="numeroAcceso" name="numeroAcceso" required>
+        <input  class=buton type="submit" value="Acceder">
+    </form>
+
+    <script>
+        document.getElementById("accessForm").addEventListener("submit", function (event) {
+            const numeroAcceso = document.getElementById("numeroAcceso").value;
+            // Cambia este número al número de acceso correcto
+            const numeroAccesoCorrecto = "201079";
+
+            if (numeroAcceso !== numeroAccesoCorrecto) {
+                alert("Número de acceso incorrecto. No puedes pasar.");
+                event.preventDefault(); // Evita el envío del formulario
+            }
+        });
+        
+    </script>
+</body>
+</html>
