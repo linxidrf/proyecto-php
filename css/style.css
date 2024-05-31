@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('lapiz.png');
+background-size: 1400px;
+background-repeat:no-repeat;
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#134351;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.form-register {
+  width:400px;
+  background: #faddb9;
+  padding: 30px;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 4px;
+  font-family: 'Arial';
+  color: #705e8a;
+  box-shadow: 7px 13px 36px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #fff0f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #E385A4;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #edadc2
+;
+}
+
+.form-register p {
+  height:30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color:#229be6 ;
+  text-decoration: none;
+}
+
+.form-register a {
+  color:#229be6 ;
+  text-decoration: none;
+}
+
+.Registrar a {
+  color: #229be6;
+  text-decoration: underline;
+}
+
+.form-register button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #f79cf7
+}
+.form-register button {
+   width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #f79cf7
+}
+
+.Registrar button {
+   width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #f56cf7
+}

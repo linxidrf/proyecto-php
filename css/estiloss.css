@@ -1,0 +1,51 @@
+body{ background-image:url('https://i.pinimg.com/564x/d8/61/b0/d861b028de6ff80d499193fd156fb727.jpg');https://i.pinimg.com/564x/d8/61/b0/d861b028de6ff80d499193fd156fb727.jpg
+
+font-family:sans-serif;
+background-size: 1550px;
+background-width:10000px;
+background-repeat:no-repeat;}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-image:url('https://i.pinimg.com/564x/f1/a3/7d/f1a37dbc55fffe9cb5501cb23d0a00f0.jpg');
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+header{
+  text-decoration: none;
+  color:#e4d8c0;
+  padding: 20px;
+  display: block;
+  align-items: center;
+  }
+
+.menu{
+  list-style:none;
+  padding: : 2000;
+  background:#16697b;
+  width: 100%;
+  max-width: 1000px;
+  margin:auto;
+  align-items:center;
+}
+
+
+.menu li a{
+  text-decoration: none;
+  color:#e4d8c0;
+  padding: 20px;
+  display: block;
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+.menu li a:hover{
+  background-image:url('fondo 2.png'); 
+
+}
+.item{
+float: right ;}

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ min-height: 100vh;
+    background: url('https://i.pinimg.com/564x/52/1a/53/521a539514fa39c397983d2f3bfd9441.jpg') center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton {
+  padding: 10px 20px;
+  background-color: #9c69f5;
+  color: #000000;;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.buton button {
+  border: none;
+    background: none;
+    background:#e6f5b0;
+    color:#fa70ac;
+    padding: 15px 10px;
+    font-family: arial;
+    cursor: pointer
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#134351;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.form-register {
+  width:400px;
+  background: #ffcce4;
+  padding: 30px;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 4px;
+  font-family: 'Arial';
+  color: white;
+  box-shadow: 7px 13px 36px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #fff0f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #E385A4;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #3c2354;
+}
+
+.form-register p {
+  height:30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color:#000000;
+  text-decoration: none;
+}
+
+.form-register a {
+  color:#fefcff;
+  text-decoration: underline;
+}
+
+.form-register .button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-family: 'Arial';
+  font-size: 18px;
+  color: #3c2354
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: 6px;
+  background-color: crimson;
+  color: whitesmoke;
+  width: 105px;
+  text-decoration: none;
+  align-self: end;
+}

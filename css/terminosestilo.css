@@ -1,0 +1,30 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4C8C8; /* Fondo rosa pastel */
+    margin: 0;
+    color: skyblue;
+    padding: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+    color: Black; /* Texto en blanco */
+}
+
+/* Estilo para los títulos de sección */
+h2 {
+    color: #87ceeb; /* Títulos en azul pastel */
+    font-size: 20px;
+}
+
+/* Estilo para las secciones de los términos */
+
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #87ceeb; /* Texto en azul pastel */
+}
